@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   goreleaser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Install osslsigncode
-        run: sudo apt-get install -y osslsigncode=2.0-1
+        run: sudo apt-get install -y osslsigncode
       - name: Obtain signing cert
         run: |
           cert="$(mktemp -t cert.XXX)"
