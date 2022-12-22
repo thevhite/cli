@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Install osslsigncode
-        run: sudo apt-get install -y osslsigncode
+        run: sudo apt-get install -y osslsigncode=2.0-1
       - name: Obtain signing cert
         run: |
           cert="$(mktemp -t cert.XXX)"
