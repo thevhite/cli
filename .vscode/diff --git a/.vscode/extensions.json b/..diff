@@ -1,0 +1,13 @@
+diff --git a/.vscode/extensions.json b/.vscode/extensions.json
+--- .vscode/extensions.json
++++ .vscode/extensions.json
+@@ -1,5 +1,6 @@
+ {
+     "recommendations": [
+-        "codespaces-contrib.codeswing"
++        "codespaces-contrib.codeswing",
++        "ms-python.python"
+     ]
+ }
+\ No newline at end of file
+
